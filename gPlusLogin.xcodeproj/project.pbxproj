@@ -12,9 +12,12 @@
 		4FDC847921CF41D400CAF832 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC847721CF41D400CAF832 /* Main.storyboard */; };
 		4FDC847B21CF41D400CAF832 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC847A21CF41D400CAF832 /* Assets.xcassets */; };
 		4FDC847E21CF41D400CAF832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC847C21CF41D400CAF832 /* LaunchScreen.storyboard */; };
+		4FDC848621CF422200CAF832 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FDC848521CF422200CAF832 /* GoogleService-Info.plist */; };
+		D6FD21309D24BF2B04E87A03 /* Pods_gPlusLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF027F420C200E422CA028E9 /* Pods_gPlusLogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31DADC5BF09357077BFEE64C /* Pods-gPlusLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gPlusLogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin.release.xcconfig"; sourceTree = "<group>"; };
 		4FDC847021CF41D400CAF832 /* gPlusLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gPlusLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FDC847321CF41D400CAF832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FDC847521CF41D400CAF832 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		4FDC847A21CF41D400CAF832 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FDC847D21CF41D400CAF832 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FDC847F21CF41D400CAF832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FDC848521CF422200CAF832 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B9D2E905199A9722D9F0CB3B /* Pods-gPlusLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gPlusLogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		DF027F420C200E422CA028E9 /* Pods_gPlusLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gPlusLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6FD21309D24BF2B04E87A03 /* Pods_gPlusLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D9B8981DD81C2D25267160A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF027F420C200E422CA028E9 /* Pods_gPlusLogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4FDC846721CF41D300CAF832 = {
 			isa = PBXGroup;
 			children = (
 				4FDC847221CF41D400CAF832 /* gPlusLogin */,
 				4FDC847121CF41D400CAF832 /* Products */,
+				557533A9704C3E83ECD918DF /* Pods */,
+				2D9B8981DD81C2D25267160A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		4FDC847221CF41D400CAF832 /* gPlusLogin */ = {
 			isa = PBXGroup;
 			children = (
+				4FDC848521CF422200CAF832 /* GoogleService-Info.plist */,
 				4FDC847321CF41D400CAF832 /* AppDelegate.swift */,
 				4FDC847521CF41D400CAF832 /* ViewController.swift */,
 				4FDC847721CF41D400CAF832 /* Main.storyboard */,
@@ -64,6 +82,15 @@
 			path = gPlusLogin;
 			sourceTree = "<group>";
 		};
+		557533A9704C3E83ECD918DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B9D2E905199A9722D9F0CB3B /* Pods-gPlusLogin.debug.xcconfig */,
+				31DADC5BF09357077BFEE64C /* Pods-gPlusLogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4FDC848221CF41D400CAF832 /* Build configuration list for PBXNativeTarget "gPlusLogin" */;
 			buildPhases = (
+				2EFE5F5AD7E35E82481AC915 /* [CP] Check Pods Manifest.lock */,
 				4FDC846C21CF41D400CAF832 /* Sources */,
 				4FDC846D21CF41D400CAF832 /* Frameworks */,
 				4FDC846E21CF41D400CAF832 /* Resources */,
+				B044B9EA074A566A9B352B0F /* [CP] Embed Pods Frameworks */,
+				CD293DFCB3C4D26E6A1B8913 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,12 +154,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDC847E21CF41D400CAF832 /* LaunchScreen.storyboard in Resources */,
+				4FDC848621CF422200CAF832 /* GoogleService-Info.plist in Resources */,
 				4FDC847B21CF41D400CAF832 /* Assets.xcassets in Resources */,
 				4FDC847921CF41D400CAF832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2EFE5F5AD7E35E82481AC915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gPlusLogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B044B9EA074A566A9B352B0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD293DFCB3C4D26E6A1B8913 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gPlusLogin/Pods-gPlusLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4FDC846C21CF41D400CAF832 /* Sources */ = {
@@ -272,6 +364,7 @@
 		};
 		4FDC848321CF41D400CAF832 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D2E905199A9722D9F0CB3B /* Pods-gPlusLogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +379,7 @@
 		};
 		4FDC848421CF41D400CAF832 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31DADC5BF09357077BFEE64C /* Pods-gPlusLogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

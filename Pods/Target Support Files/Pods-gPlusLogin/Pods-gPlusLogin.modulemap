@@ -1,0 +1,6 @@
+framework module Pods_gPlusLogin {
+  umbrella header "Pods-gPlusLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}
